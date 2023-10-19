@@ -41,11 +41,6 @@ def run_discord_bot():
             await message.channel.send(f'Hey there {message.author.name} :wave:')
         elif p_message == '!roll':
             roll = random.randint(1, 6)
-            await message.channel.send(f"{message.author.name} rolled a {roll}! :game_die:")
-        elif p_message == '!bitch' and '!Bitch' and '!BITCH':
-            with open('uno-reverse.gif', 'rb') as f:
-                file = discord.File(f)
-                await message.channel.send(file=file) and await message.channel.send('no you :middle_finger:')
         elif p_message == '!highroll':
             user_roll = random.randint(1, 6)
             bot_roll = random.randint(1, 6)
@@ -74,12 +69,6 @@ def run_discord_bot():
             await message.channel.send(f"Your name is {message.author.display_name}")
         elif p_message == '!my_id':
             await message.channel.send(f'Hey there {message.author.name}! Your Discord ID is {message.author.id}')
-        elif p_message == '!hell':
-            await message.channel.send(f'{message.author.display_name} will be sent to hell! :fire: ')
-        elif p_message == '!tell':
-            await message.channel.send(f'You, {message.author.display_name} is a joke!')
-
-            await message.channel.send(f"{message.author.name} sier at, Theon er gay!")
         elif p_message == "!blackjack":
             if message.author.bot:
                 await message.channel.send("Sorry, only human players can play blackjack.")

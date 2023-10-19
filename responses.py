@@ -20,4 +20,4 @@ def get_response(message: str) -> str:
         return 'Yes!'
 
     if p_message == '!help':
-        return '`Try these following commands with the prefix !, "ping, pong, bitch, my_id, hey, いいえ, yo, はい, roll, name, hell, highroll, blackjack, tell.`'
+        return '`Try these following commands with the prefix !, "ping, pong, my_id, hey, いいえ, yo, はい, roll, name, highroll, blackjack.`'
